@@ -12,6 +12,52 @@
         <ProgressBar Value="50" Width="100" Height="20" />        
         <Slider Value="5" Width="100" />        
         <PasswordBox PasswordChar="*" Password="Secret" Width="100" />-->
-        <Image Source=""
+        <!--<Image Source="cat.jpg" Height="100" />
+        <MediaElement Source="cat.wmv" Height="150" LoadedBehavior="Play" />-->
+        <!--<Ellipse Width="100" Height="50" Fill="Blue" Stroke="Black" />
+        <Rectangle Width="100" Height="70" Fill="Red" />
+        <Path Width="100" Height="20" Margin="5, 5, 5, 5" />
+        <Path Fill="Blue">
+            <Path.Data>
+                <RectangleGeometry Rect="0, 0, 30, 30"/>
+            </Path.Data>
+        </Path>-->
+        <!--<Button Content="Normal Button" Width="120" Height="30" />
+        <ToggleButton Content="Toggle Button" Width="120" Height="30" />
+        <CheckBox Content="CheckBox" />
+        <RadioButton Content="Radio Button" />-->
+        <!--<Button Padding="10" Height="50" Width="100">
+            <MediaElement Source="cat.wmv" Height="30" />
+        </Button>
+        <Button Width="100">
+            <CheckBox>
+                <TextBlock Text="to the laundry" 
+                           TextWrapping="Wrap" />
+            </CheckBox>
+        </Button>-->
+        <!--<Border Background="Orange" CornerRadius="10" Padding="5" Width="120" >
+            <Button Content="Button" Width="100" Height="30" />
+        </Border>
+        <Border Background="Blue" CornerRadius="10,0,10,0" Padding="5" Width="120" >
+            <Button Content="Other Button" Width="100" Height="30" />
+        </Border>
+
+        <ScrollViewer Height="300" Width="400"
+                      HorizontalScrollBarVisibility="Auto">
+            <MediaElement Source="cat.wmv" Stretch="None" />
+        </ScrollViewer>-->
+
+        <!--<Viewbox Stretch="Fill" Width="300" Height="300" ScrollViewer.VerticalScrollBarVisibility="Visible">
+            <MediaElement Source="cat.wmv" Stretch="None" />
+        </Viewbox>-->
+        <!--<Grid Height="60" Width="100" Background="LightBlue">
+            <Button Content="A" />
+        </Grid>-->
+<Grid Height="60" Width="100" Background="LightBlue">
+    <Viewbox Stretch="Fill">
+        <Button Content="A" />
+    </Viewbox>
+</Grid>
+        
     </StackPanel>
 </Window>
