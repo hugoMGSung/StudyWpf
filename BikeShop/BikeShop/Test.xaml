@@ -68,7 +68,7 @@
             <TextBox Text="{Binding Name}" />
             <Label Content="{Binding SSN}" />
         </StackPanel>-->
-        <Grid Height="250" Width="150">
+        <!--<Grid Height="250" Width="150">
             <ListBox ItemsSource="{Binding}">
                 <ListBox.ItemTemplate>
                     <ItemContainerTemplate>
@@ -87,7 +87,22 @@
                     </ItemContainerTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
+        </Grid>-->
+        <Grid Width="300" Height="150">
+            <Button Content="Press me">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Rectangle Fill="{TemplateBinding Background}" RadiusX="12" RadiusY="12" StrokeThickness="3" />
+                            <Label Content="{TemplateBinding Content}"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center" />
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
         </Grid>
+        
         
     </Grid>
 </Page>
