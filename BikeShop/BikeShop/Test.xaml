@@ -8,10 +8,24 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Test">
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="50" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Red" />
+                        <GradientStop Color="Yellow" Offset="1" />
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
     <!--<Page.Resources>
         <c:TwiceConverter x:Key="twiceConv" />
     </Page.Resources>-->
-    <Grid>
+    <Grid Background="White">
         <!--<TextBlock value="{Binding Speed, Converter={StaticResource twiceConv}}" />-->
         <!--<Label>
             <bl:Car x:Name="myCar" Speed="100" Color="Red" />
@@ -88,7 +102,7 @@
                 </ListBox.ItemTemplate>
             </ListBox>
         </Grid>-->
-        <Grid Width="300" Height="150">
+        <!--<Grid Width="300" Height="150">
             <Button Content="Press me">
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
@@ -101,7 +115,17 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-        </Grid>
+        </Grid>-->
+        <Grid Height="300" Width="300">
+            <!--<Label Content="{StaticResource button}" 
+                    Background="{StaticResource accentBrush}"/>-->
+<StackPanel Margin="30" Orientation="Horizontal">
+    <Button Content="A" />
+    <Button Content="B" />
+    <Button Content="C" />
+    <Button Content="D" />
+</StackPanel>
+        </Grid> 
         
         
     </Grid>

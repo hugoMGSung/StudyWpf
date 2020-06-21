@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CurrencyConverter2.xaml.cs">
+      <DependentUpon>CurrencyConverter2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CurrencyConverter.xaml.cs">
+      <DependentUpon>CurrencyConverter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Discussion.xaml.cs">
       <DependentUpon>Discussion.xaml</DependentUpon>
     </Compile>
@@ -70,7 +76,17 @@
     <Compile Include="Test.xaml.cs">
       <DependentUpon>Test.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\CurrencyConverterViewModel2.cs" />
+    <Compile Include="ViewModel\CurrencyConverterViewModel.cs" />
     <Page Include="Contact.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CurrencyConverter2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CurrencyConverter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
