@@ -27,9 +27,7 @@ namespace BikeShop
 
         private void BtnEmailSupport_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(
-                new Uri("/Contact.xaml", UriKind.RelativeOrAbsolute)
-                );
+            NavigationService.Navigate(new Uri("/TestDB.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void BtnLiveSupport_Click(object sender, RoutedEventArgs e)

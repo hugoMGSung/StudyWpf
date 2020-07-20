@@ -47,17 +47,17 @@
             <MediaElement Source="cat.wmv" Stretch="None" />
         </ScrollViewer>-->
 
-        <!--<Viewbox Stretch="Fill" Width="300" Height="300" ScrollViewer.VerticalScrollBarVisibility="Visible">
-            <MediaElement Source="cat.wmv" Stretch="None" />
-        </Viewbox>-->
+        <Viewbox Stretch="Fill" Height="403" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="10,0,0.453,0">
+            <MediaElement Source="cat.wmv" Stretch="None" Height="357" Width="625" />
+        </Viewbox>
         <!--<Grid Height="60" Width="100" Background="LightBlue">
             <Button Content="A" />
         </Grid>-->
-<Grid Height="60" Width="100" Background="LightBlue">
-    <Viewbox Stretch="Fill">
-        <Button Content="A" />
-    </Viewbox>
-</Grid>
-        
+        <!--<Grid Height="60" Width="100" Background="LightBlue">
+            <Viewbox Stretch="Fill">
+                <Button Content="A" />
+            </Viewbox>
+        </Grid>-->
+
     </StackPanel>
 </Window>

@@ -4,6 +4,13 @@
              xmlns:local="clr-namespace:BikeShop"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <local:Bootstrapper x:Key="Bootstrapper" />
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
         <Button x:Key="button">Hello, World</Button>
         <SolidColorBrush x:Key="accentBrush" Color="Red" />
         <LinearGradientBrush x:Key="background">
