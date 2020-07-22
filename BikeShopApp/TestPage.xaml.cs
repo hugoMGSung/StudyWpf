@@ -49,7 +49,7 @@ namespace BikeShopApp
             car.Color = Colors.Blue;
             car.Driver = new Human { Name = "Ted", HasDrivingLicense = true };
 
-            //this.DataContext = car;
+            SpnBinding.DataContext = car;
         }
 
     }

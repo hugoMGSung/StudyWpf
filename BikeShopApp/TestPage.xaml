@@ -97,7 +97,7 @@
             </ComboBox>
         </Grid>
 
-        <!--<StackPanel Margin="10">
+        <!--<StackPanel x:Name="SpnBinding" Margin="10">
             <Slider x:Name="slider" Value="10" Minimum="0" Maximum="100" />
             <ProgressBar Height="30" Value="{Binding Value, ElementName=slider}" />
             <TextBlock TextAlignment="Center" Text="{Binding Value, ElementName=slider, StringFormat='{}{0:#,#}'}" />
