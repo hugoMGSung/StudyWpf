@@ -10,7 +10,6 @@ namespace BikeShop
 {
     public class TestDBViewModel : Conductor<IScreen>.Collection.OneActive
     {
-        private readonly IMessageProvider msgProvider;
 
     }
 }

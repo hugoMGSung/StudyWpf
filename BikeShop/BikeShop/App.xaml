@@ -5,6 +5,13 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
+            <Style x:Key="myWindows" TargetType="Window">
+                <Setter Property="Width" Value="1290" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+    <!--<Application.Resources>
+        <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary>
                     <local:Bootstrapper x:Key="Bootstrapper" />
@@ -29,5 +36,5 @@
                 </Setter.Value>
             </Setter>
         </Style>
-    </Application.Resources>
+    </Application.Resources>-->
 </Application>

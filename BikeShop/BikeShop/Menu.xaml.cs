@@ -43,5 +43,12 @@ namespace BikeShop
                 new Uri("/ProductsManagement.xaml", UriKind.RelativeOrAbsolute)
                 );
         }
+
+        private void BtnTest_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(
+                new Uri("/Test.xaml", UriKind.RelativeOrAbsolute)
+                );
+        }
     }
 }

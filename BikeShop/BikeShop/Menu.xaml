@@ -6,7 +6,6 @@
       xmlns:local="clr-namespace:BikeShop"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Background="{StaticResource background}"
       Title="Menu">
     <Page.Resources>
         <Style TargetType="Button">
@@ -42,6 +41,7 @@
         <Button x:Name="BtnLiveSupport" Content="Live support" Grid.Row="1" Grid.Column="1" FontSize="16" Margin="10" Click="BtnLiveSupport_Click"/>
         <Button x:Name="BtnEmailSupport" Content="Email support" Grid.Row="1" Grid.Column="2" FontSize="16" Margin="10" Click="BtnEmailSupport_Click"/>
         <TextBlock Grid.Row="2" Grid.ColumnSpan="3" Margin="30" TextAlignment="Center" TextWrapping="Wrap" Text="Adventure Works" FontSize="36"/>
-        
+        <Button x:Name="BtnTest" Content="" Width="65" Height="40" Background="Transparent" Click="BtnTest_Click"  />
+
     </Grid>
 </Page>
