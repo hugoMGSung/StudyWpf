@@ -39,25 +39,25 @@ namespace WpfMvvmApp.Helpers
             else if (date.Month <= 2 && date.Day <= 18)
                 result = "물병자리";
             else if (date.Month <= 3 && date.Day <= 20)
-                result = "물병자리";
+                result = "물고기자리";
             else if (date.Month <= 4 && date.Day <= 20)
-                result = "물병자리";
+                result = "양자리";
             else if (date.Month <= 5 && date.Day <= 20)
-                result = "물병자리";
+                result = "황소자리";
             else if (date.Month <= 6 && date.Day <= 21)
-                result = "물병자리";
+                result = "쌍둥이자리";
             else if (date.Month <= 7 && date.Day <= 22)
-                result = "물병자리";
+                result = "게자리";
             else if (date.Month <= 8 && date.Day <= 22)
-                result = "물병자리";
+                result = "사자자리";
             else if (date.Month <= 9 && date.Day <= 22)
-                result = "물병자리";
+                result = "처녀자리";
             else if (date.Month <= 10 && date.Day <= 23)
-                result = "물병자리";
+                result = "천칭자리";
             else if (date.Month <= 11 && date.Day <= 22)
-                result = "물병자리";
+                result = "전갈자리";
             else
-                result = "물병자리";
+                result = "사수자리";
 
             return result;
         }
