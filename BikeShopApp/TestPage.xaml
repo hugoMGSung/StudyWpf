@@ -6,9 +6,9 @@
       xmlns:local="clr-namespace:BikeShopApp"
       xmlns:bl="clr-namespace:BusinessLogic"
       xmlns:m="clr-namespace:BikeShopApp.Maths"
-      mc:Ignorable="d" 
-      d:DesignHeight="380" d:DesignWidth="800"
-      Title="TestPage">
+      mc:Ignorable="d"
+      Height="380" Width="800"
+      Title="TestPage" Background="Beige">
     <Page.Resources>
         <m:TwiceConverter x:Key="twiceConv" />
     </Page.Resources>
@@ -70,7 +70,7 @@
 
         </Grid>-->
 
-        <Grid Width="320" Height="200">
+        <!--<Grid Width="320" Height="200">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition Width="20" />
@@ -79,23 +79,56 @@
 
             <ListBox x:Name="LstCar" Grid.Column="0"
                      ItemsSource="{Binding}">
-                <!--<Label Content="Element1" />
+                -->
+        <!--<Label Content="Element1" />
                 <Label Content="Element2" />
                 <TextBlock Text="Element3" />
                 <GroupBox Header="Element4">
                     This is a subsentence
                 </GroupBox>-->
+        <!--
+                <ListBox.ItemTemplate>
+                    <ItemContainerTemplate>
+                        <StackPanel>
+                            <TextBlock Text="속도" />
+                            <TextBox Text="{Binding Speed, StringFormat='{}{0:0}'}" />
+                            <Slider Maximum="300" Value="{Binding Speed}" />
+                            <TextBlock Text="색상" />
+                            <Border Height="20">
+                                <Border.Background>
+                                    <SolidColorBrush Color="{Binding Color}" />
+                                </Border.Background>
+                            </Border>
+                            <TextBox Text="{Binding Color}" />
+                            <TextBlock Text="운전자" />
+                            <TextBox Text="{Binding Driver.Name}" />
+                        </StackPanel>                        
+                    </ItemContainerTemplate>
+                </ListBox.ItemTemplate>
             </ListBox>
 
-            <ComboBox Grid.Column="2" Height="30" VerticalAlignment="Top">
-                <Label Content="Element1" />
-                <Label Content="Element2" />
-                <TextBlock Text="Element3" />
-                <GroupBox Header="Element4">
-                    This is a subsentence
-                </GroupBox>
+            <ComboBox x:Name="CboCar"  Grid.Column="2" Height="120" VerticalAlignment="Top"
+                      ItemsSource="{Binding}">
+                <ComboBox.ItemTemplate>
+                    <ItemContainerTemplate>
+                        <StackPanel>
+                            <TextBlock Text="속도" />
+                            <TextBox Text="{Binding Speed, StringFormat='{}{0:0}'}" />
+                            <Slider Maximum="300" Value="{Binding Speed}" />
+                            <TextBlock Text="색상" />
+                            <Border Height="20">
+                                <Border.Background>
+                                    <SolidColorBrush Color="{Binding Color}" />
+                                </Border.Background>
+                            </Border>
+                            <TextBox Text="{Binding Color}" />
+                            <TextBlock Text="운전자" />
+                            <TextBox Text="{Binding Driver.Name}" />
+                        </StackPanel>
+                    </ItemContainerTemplate>
+                </ComboBox.ItemTemplate>
             </ComboBox>
-        </Grid>
+        </Grid>-->
 
         <!--<StackPanel x:Name="SpnBinding" Margin="10">
             <Slider x:Name="slider" Value="10" Minimum="0" Maximum="100" />
@@ -106,6 +139,26 @@
             <TextBox Text="{Binding Speed, Mode=TwoWay, Converter={StaticResource twiceConv}}" FontSize="16" Width="100" />
             <TextBlock Text="{Binding Speed, Mode=OneWay}" FontSize="20" />
         </StackPanel>-->
-        
+
+        <Button Content="Click" FontSize="20" Click="Button_Click" Margin="47,33,536,291">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Rectangle Fill="#BB000000" Margin="5,5,0,0" RadiusX="5" RadiusY="5" />
+                        <Rectangle Fill="{TemplateBinding Background}" Margin="0, 0, 5, 5" RadiusX="5" RadiusY="5" />
+                        <Viewbox Margin="0,0,0,5">
+                            <Label Content="{TemplateBinding Content}" />
+                        </Viewbox>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <!--<StackPanel Width="100" Margin="30">
+            <Button Style="{StaticResource niceButton}" Content="Button A" />
+            <Button Content="Button B" />
+            <Button Style="{StaticResource niceButton}" Content="Button C" />
+        </StackPanel>-->
+
     </Grid>
 </Page>
