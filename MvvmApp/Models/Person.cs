@@ -59,5 +59,13 @@ namespace MvvmApp.Models
                 return Commons.CalcAge(Date) > 18;
             }
         }
+
+        public string ChnZodiac
+        {
+            get
+            {
+                return Commons.GetChineseZodiac(Date);
+            }
+        }
     }
 }

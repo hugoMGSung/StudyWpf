@@ -1,4 +1,5 @@
 ﻿using MahApps.Metro.Controls;
+using MvvmApp.ViewModels;
 
 namespace MvvmApp.Views
 {
@@ -10,6 +11,7 @@ namespace MvvmApp.Views
         public ShellView()
         {
             InitializeComponent();
+            this.DataContext = new ShellViewModel();
         }
     }
 }
