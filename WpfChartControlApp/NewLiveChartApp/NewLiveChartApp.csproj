@@ -50,6 +50,12 @@
     <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
       <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
     </Reference>
+    <Reference Include="LiveCharts.Geared, Version=1.2.8.2, Culture=neutral, PublicKeyToken=7292f245d14ab8bf, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Geared.1.2.9\lib\net45\LiveCharts.Geared.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
       <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
     </Reference>
@@ -153,22 +159,51 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\MeasureModel.cs" />
+    <Compile Include="ViewModels\BasicBarViewModel.cs" />
+    <Compile Include="ViewModels\BasicLineAndBubbleViewModel.cs" />
+    <Compile Include="ViewModels\CandleChartViewModel.cs" />
+    <Compile Include="ViewModels\ContantChangeViewModel.cs" />
     <Compile Include="ViewModels\GaugeChartViewModel.cs" />
+    <Compile Include="ViewModels\GaugeCircleViewModel.cs" />
     <Compile Include="ViewModels\LineChartViewModel.cs" />
+    <Compile Include="ViewModels\PieChartViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="ViewModels\SpeedTestViewModel.cs" />
+    <Compile Include="Views\BasicBarView.xaml.cs">
+      <DependentUpon>BasicBarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BasicLineAndBubbleView.xaml.cs">
+      <DependentUpon>BasicLineAndBubbleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CandleChartView.xaml.cs">
+      <DependentUpon>CandleChartView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ContantChangeView.xaml.cs">
+      <DependentUpon>ContantChangeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\GaugeChartView.xaml.cs">
       <DependentUpon>GaugeChartView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GaugeCircleView.xaml.cs">
+      <DependentUpon>GaugeCircleView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LineChartView.xaml.cs">
       <DependentUpon>LineChartView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\PieChartView.xaml.cs">
+      <DependentUpon>PieChartView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SpeedTestView.xaml.cs">
+      <DependentUpon>SpeedTestView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -200,10 +235,29 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\BasicBarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BasicLineAndBubbleView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CandleChartView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ContantChangeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\GaugeChartView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GaugeCircleView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -211,7 +265,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\PieChartView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ShellView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SpeedTestView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

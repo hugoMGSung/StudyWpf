@@ -14,8 +14,7 @@
                 <lvc:LineSeries Values="{Binding Values}" DataLabels="True" />
             </lvc:CartesianChart.Series>
             <lvc:CartesianChart.DataTooltip>
-                <!--The Selection mode property should be done automatically in future versions-->
-                <lvc:DefaultTooltip SelectionMode="SharedYValues"></lvc:DefaultTooltip>
+                <lvc:DefaultTooltip SelectionMode="SharedYValues" />
             </lvc:CartesianChart.DataTooltip>
         </lvc:CartesianChart>
     </Grid>

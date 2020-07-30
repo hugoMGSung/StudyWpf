@@ -22,6 +22,43 @@
                             <iconPacks:PackIconEntypo Kind="BackInTime" />
                         </MenuItem.Icon>
                     </MenuItem>
+                    <MenuItem x:Name="LoadGauge360Chart" Header="Gauge360 Chart">
+                        <MenuItem.Icon>
+                            <iconPacks:PackIconEntypo Kind="EmojiHappy" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="LoadBasicBarChart" Header="Basic BarChart">
+                        <MenuItem.Icon>
+                            <iconPacks:PackIconEntypo Kind="Aircraft" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="LoadBasicLineAndBubble" Header="Basic LineChart">
+                        <MenuItem.Icon>
+                            <iconPacks:PackIconOcticons Kind="Beaker" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="LoadConstantChart" Header="ConstantChart">
+                        <MenuItem.Icon>
+                            <iconPacks:PackIconOcticons Kind="ArrowRight" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="LoadCandleChart" Header="CandleChart">
+                        <MenuItem.Icon>
+                            <iconPacks:PackIconTypicons Kind="ChartArea" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="LoadPieChart" Header="PieChart">
+                        <MenuItem.Icon>
+                            <iconPacks:PackIconTypicons Kind="Pi" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="_LiveChart Sample">
+                    <MenuItem x:Name="LoadSpeedTest" Header="LineChart">
+                        <MenuItem.Icon>
+                            <iconPacks:PackIconTypicons Kind="PlaneOutline" />
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
             </Menu>
         </Grid>
