@@ -1,0 +1,32 @@
+﻿<mah:MetroWindow x:Class="NewLiveChartApp.Views.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:local="clr-namespace:NewLiveChartApp.Views"
+        mc:Ignorable="d"
+        Title="ShellVIew" Height="720" Width="1280" WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top">
+            <Menu IsMainMenu="True">
+                <MenuItem Header="_Chart">
+                    <MenuItem x:Name="LoadLineChart" Header="LineChart">
+                        <MenuItem.Icon>
+                            <iconPacks:PackIconMaterial Kind="WeatherTornado" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="LoadGaugeChart" Header="Gauge Chart">
+                        <MenuItem.Icon>
+                            <iconPacks:PackIconEntypo Kind="BackInTime" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+        </Grid>
+        <Grid>
+            <ContentControl x:Name="ActiveItem" />
+        </Grid>
+    </DockPanel>
+</mah:MetroWindow>
