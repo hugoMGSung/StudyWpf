@@ -16,15 +16,7 @@ namespace NewLiveChartApp.ViewModels
 
         public LineChartViewModel()
         {
-            Values = new ChartValues<float>
-            {
-                3,
-                4,
-                6,
-                3,
-                2,
-                6
-            };
+            Values = new ChartValues<float> { 3, 4, 6, 3, 2, 6 };
         }
     }
 }

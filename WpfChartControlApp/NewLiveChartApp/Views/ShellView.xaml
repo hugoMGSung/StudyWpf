@@ -8,61 +8,77 @@
         xmlns:local="clr-namespace:NewLiveChartApp.Views"
         mc:Ignorable="d"
         Title="ShellVIew" Height="720" Width="1280" WindowStartupLocation="CenterScreen">
+    <mah:MetroWindow.IconTemplate>
+        <DataTemplate>
+            <iconPacks:PackIconTypicons Kind="ChartBar" Foreground="White" Margin="5, 7, 0, 0" />
+        </DataTemplate>
+    </mah:MetroWindow.IconTemplate>
     <DockPanel>
         <Grid DockPanel.Dock="Top">
             <Menu IsMainMenu="True">
                 <MenuItem Header="_Chart">
+                    <MenuItem.Icon>
+                        <iconPacks:PackIconTypicons Kind="ChartLineOutline" />
+                    </MenuItem.Icon>
                     <MenuItem x:Name="LoadLineChart" Header="LineChart">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconMaterial Kind="WeatherTornado" />
+                            <iconPacks:PackIconMaterial Kind="ChartBellCurveCumulative" />
                         </MenuItem.Icon>
                     </MenuItem>
                     <MenuItem x:Name="LoadGaugeChart" Header="Gauge Chart">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconEntypo Kind="BackInTime" />
+                            <iconPacks:PackIconMaterial Kind="Gauge" />
                         </MenuItem.Icon>
                     </MenuItem>
                     <MenuItem x:Name="LoadGauge360Chart" Header="Gauge360 Chart">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconEntypo Kind="EmojiHappy" />
+                            <iconPacks:PackIconMaterial Kind="GaugeFull" />
                         </MenuItem.Icon>
                     </MenuItem>
                     <MenuItem x:Name="LoadBasicBarChart" Header="Basic BarChart">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconEntypo Kind="Aircraft" />
+                            <iconPacks:PackIconMaterial Kind="ChartBoxOutline" />
                         </MenuItem.Icon>
                     </MenuItem>
                     <MenuItem x:Name="LoadBasicLineAndBubble" Header="Basic LineChart">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconOcticons Kind="Beaker" />
+                            <iconPacks:PackIconMaterial Kind="ChartLine" />
                         </MenuItem.Icon>
                     </MenuItem>
                     <MenuItem x:Name="LoadConstantChart" Header="ConstantChart">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconOcticons Kind="ArrowRight" />
+                            <iconPacks:PackIconMaterial Kind="ChartBellCurve" />
                         </MenuItem.Icon>
                     </MenuItem>
                     <MenuItem x:Name="LoadCandleChart" Header="CandleChart">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconTypicons Kind="ChartArea" />
+                            <iconPacks:PackIconMaterial Kind="SwapVerticalBold" />
                         </MenuItem.Icon>
                     </MenuItem>
                     <MenuItem x:Name="LoadPieChart" Header="PieChart">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconTypicons Kind="Pi" />
+                            <iconPacks:PackIconTypicons Kind="ChartPieOutline" />
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
                 <MenuItem Header="_LiveChart Sample">
-                    <MenuItem x:Name="LoadSpeedTest" Header="LineChart">
+                    <MenuItem.Icon>
+                        <iconPacks:PackIconTypicons Kind="ChartLine" />
+                    </MenuItem.Icon>
+                    <MenuItem x:Name="LoadSpeedTest" Header="LineChart">                        
                         <MenuItem.Icon>
-                            <iconPacks:PackIconTypicons Kind="PlaneOutline" />
+                            <iconPacks:PackIconMaterial Kind="ChartHistogram" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="LoadMaterialDesign" Header="Material Design">
+                        <MenuItem.Icon>
+                            <iconPacks:PackIconMaterial Kind="ChartBoxPlusOutline" />
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
             </Menu>
         </Grid>
-        <Grid>
+        <Grid Background="{StaticResource MahApps.Brushes.Window.Background}">
             <ContentControl x:Name="ActiveItem" />
         </Grid>
     </DockPanel>

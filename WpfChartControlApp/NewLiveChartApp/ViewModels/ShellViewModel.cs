@@ -55,5 +55,10 @@ namespace NewLiveChartApp.ViewModels
         {
             ActivateItem(new SpeedTestViewModel());
         }
+
+        public void LoadMaterialDesign()
+        {
+            ActivateItem(new MaterialViewModel());
+        }
     }
 }
