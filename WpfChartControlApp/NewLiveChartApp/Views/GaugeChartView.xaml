@@ -13,16 +13,16 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Button x:Name="UpdateValue" Margin="10" Height="50">Update</Button>
-        <lvc:AngularGauge 
-            Grid.Row="1" Value="{Binding Value}" FromValue="50" ToValue="250" 
-            LabelsStep="50" TicksStep="25" Wedge="300"
-            TicksForeground="White" Foreground="White" 
-            FontWeight="Bold" FontSize="16"
-            SectionsInnerRadius=".5">
+        <lvc:AngularGauge Grid.Row="1"
+                          Value="{Binding Value}" FromValue="50" ToValue="250"
+                          Foreground="White" TicksForeground="White"
+                          LabelsStep="50" TicksStep="25" Wedge="300"
+                          FontWeight="Bold" FontSize="20"
+                          SectionsInnerRadius=".55">
             <lvc:AngularGauge.Sections>
                 <lvc:AngularSection FromValue="50" ToValue="200" Fill="#F8A725"/>
-                <lvc:AngularSection FromValue="200" ToValue="250" Fill="#FF3939"/>
+                <lvc:AngularSection FromValue="200" ToValue="250" Fill="#FF3939" />
             </lvc:AngularGauge.Sections>
-        </lvc:AngularGauge>     
+        </lvc:AngularGauge>
     </Grid>
 </UserControl>
