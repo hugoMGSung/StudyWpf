@@ -30,7 +30,7 @@
 
         <Grid Grid.Column="1" Margin="10">
             <lvc:PieChart Series="{Binding SeriesCollection}" 
-                      LegendLocation="Right" InnerRadius="100" Margin="0 15">
+                        LegendLocation="Right" InnerRadius="100" Margin="0 15">
                 <lvc:PieChart.ChartLegend>
                     <lvc:DefaultLegend BulletSize="20"/>
                 </lvc:PieChart.ChartLegend>

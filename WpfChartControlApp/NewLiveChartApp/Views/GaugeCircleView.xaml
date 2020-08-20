@@ -20,13 +20,13 @@
 
         <!--normal gauge-->
         <lvc:Gauge Grid.Row="0" Grid.Column="0" Margin="5"
-                   Uses360Mode="True"
-                   From="0" To="100" Value="{Binding Value1}" />
+                    Uses360Mode="True"
+                    From="0" To="100" Value="{Binding Value1}" />
 
         <!--this gauge is rotated 90° and has an inverted clockwise fill-->
         <lvc:Gauge Grid.Row="0" Grid.Column="1" Margin="5"
-                   Uses360Mode="True"
-                   From="0" To="100" Value="{Binding Value2}" >
+                    Uses360Mode="True"
+                    From="0" To="100" Value="{Binding Value2}" >
             <lvc:Gauge.GaugeRenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"></RotateTransform>
@@ -36,27 +36,27 @@
         </lvc:Gauge>
 
         <lvc:Gauge Grid.Row="0" Grid.Column="2" Margin="5"
-                   Uses360Mode="True"
-                   From="0" To="100" Value="{Binding Value3}"
-                   HighFontSize="60" Foreground="White"
-                   InnerRadius="0" GaugeBackground="#BE54A3E9"/>
+                    Uses360Mode="True"
+                    From="0" To="100" Value="{Binding Value3}"
+                    HighFontSize="60" Foreground="White"
+                    InnerRadius="0" GaugeBackground="#BE54A3E9"/>
 
         <lvc:Gauge Grid.Row="1" Grid.Column="0" Margin="5"
-                   Uses360Mode="True"
-                   From="0" To="100" Value="{Binding Value4}"
-                   HighFontSize="60" Foreground="#424242"
-                   FromColor="White" ToColor="Black"
-                   InnerRadius="0" GaugeBackground="Transparent">
+                    Uses360Mode="True"
+                    From="0" To="100" Value="{Binding Value4}"
+                    HighFontSize="60" Foreground="#424242"
+                    FromColor="White" ToColor="Black"
+                    InnerRadius="0" GaugeBackground="Transparent">
         </lvc:Gauge>
 
         <!--standard gauge-->
         <lvc:Gauge Grid.Row="1" Grid.Column="1" Margin="5"
-                   From="0" To="100" Value="{Binding Value5}"/>
+            From="0" To="100" Value="{Binding Value5}"/>
 
         <!--custom fill gauge-->
         <lvc:Gauge Grid.Row="1" Grid.Column="2"
-                   From="0" To="100" Value="{Binding Value6}"
-                   LabelsVisibility="Collapsed">
+            From="0" To="100" Value="{Binding Value6}"
+            LabelsVisibility="Collapsed">
             <lvc:Gauge.GaugeActiveFill>
                 <LinearGradientBrush>
                     <GradientStop Color="Yellow" Offset="0.0" />

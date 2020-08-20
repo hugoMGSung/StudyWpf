@@ -60,5 +60,10 @@ namespace NewLiveChartApp.ViewModels
         {
             ActivateItem(new MaterialViewModel());
         }
+
+        public void LoadRealtimeChart()
+        {
+            ActivateItem(new RealTimeChartViewModel());
+        }
     }
 }

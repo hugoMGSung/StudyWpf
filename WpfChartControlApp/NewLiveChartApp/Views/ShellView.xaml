@@ -75,6 +75,11 @@
                             <iconPacks:PackIconMaterial Kind="ChartBoxPlusOutline" />
                         </MenuItem.Icon>
                     </MenuItem>
+                    <MenuItem x:Name="LoadRealtimeChart" Header="RealTime Chart">
+                        <MenuItem.Icon>
+                            <iconPacks:PackIconMaterial Kind="ChartLineStacked" />
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
             </Menu>
         </Grid>
